@@ -1,0 +1,298 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+
+}
+
+body {
+
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 96%);
+
+}
+
+h2 {
+
+    font-weight: 500;
+
+}
+
+.grid {
+
+    max-width: 1100px;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 
+    160px 
+    160px 
+    120px 
+    120px 
+    320px;
+    grid-auto-rows: min-content;
+    grid-template-areas: 
+    "box7 box1 box1 box4"
+    "box7 box1 box1 box4"
+    "box7 box2 box3 box4"
+    "box8 box2 box3 box4"
+    "box8 box6 box5 box5";
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+  
+
+}
+
+.project {
+
+    border: 1px solid;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 15px;
+    border: none;
+
+}
+
+img {
+
+max-width: 100%;
+
+}
+
+#box1 {
+
+    grid-area: box1;
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#box1 h1 {
+
+    font-weight: 400;
+    font-size: 4rem;
+    margin-top: 20px;
+
+}
+
+#box1 img {
+
+    height: 10%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+#box2 {
+
+    grid-area: box2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+#box2 img {
+
+    display: block;
+    width: 180%;
+    max-width: none;
+
+
+}
+
+#box2 h2 {
+
+    
+    text-align: left;
+    font-size: 40px;
+    line-height: 2.1rem;
+    letter-spacing: -0.1rem;
+
+}
+#box3 {
+
+    grid-area: box3;
+    background-color: hsl(39, 100%, 71%);
+
+}
+
+#box3 h2 {
+
+    text-align: left;
+    font-size: 40px;
+    line-height: 2rem;
+    letter-spacing: -0.1rem;
+    margin-bottom: 10px;
+
+}
+#box4 {
+
+    grid-area: box4;
+    background-color: hsl(254, 88%, 90%);
+    position: relative;;
+
+}
+
+#box4 h2 {
+
+    padding: 20px;
+    line-height: 1.5rem;
+    letter-spacing: -0.1rem;
+
+}
+
+#box4 img {
+
+    display:block;
+    margin:0 auto;
+    width:180%;
+    max-width:none;
+    transform: translateX(20px);
+
+}
+
+#box4 p {
+
+    margin-top: 20px;
+
+}
+#box5 {
+
+    grid-area: box5;
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+#box5 h2 {
+
+    font-size: 30px;
+
+}
+
+#box5 img {
+
+    height: 250px;
+
+}
+#box6 {
+
+    grid-area: box6;
+    background-color: white;
+    position: relative;
+
+}
+
+#box6 img {
+
+    position: absolute;
+    bottom: 20px;
+    height: 80px
+
+}
+
+#box6 p {
+
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+#box7 {
+
+    grid-area: box7;
+    background-color: hsl(31, 66%, 93%);
+    align-items: center;
+    
+}
+
+#box7 h2 {
+
+    line-height: 2rem;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+#box7 img {
+
+    height: 100px;
+
+}
+#box8 {
+
+    grid-area: box8;
+    background-color: hsl(39, 100%, 71%);
+
+}
+
+#box8 h2 {
+
+    line-height: 2rem;
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    width: 80%;
+    margin-bottom: 20px;
+
+}
+
+#box8 img {
+
+    margin-top: 60px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .grid {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8";
+        padding: 20px;
+
+    }
+
+    #box1 h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    #box2 h2, #box3 h2, #box8 h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+    #box2 img, #box4 img {
+
+        width: 100%;
+        transform: none;
+
+    }
+
+}
