@@ -1,0 +1,193 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(212, 6%, 44%);
+
+}
+
+.container {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 60px 160px;
+
+
+}
+
+.container p {
+
+    color: hsl(212, 6%, 44%);
+
+}
+
+.container h1 {
+
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    margin: 0 auto;
+    width: 70%;
+
+
+}
+
+.text span {
+
+    font-weight: 500;
+    color: black;
+
+}
+
+.text {
+
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.text p {
+
+    margin: 20px 0 40px 0;
+
+}
+
+.card {
+
+    /* border: 1px solid; */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-top: 5px solid;
+    border-radius: 10px;
+
+
+
+}
+
+.card img {
+
+    height: 60px;
+    width: 60px;
+    align-self: flex-end;
+    margin-top: 2rem;
+
+
+}
+
+.card p {
+
+    margin-top: 10px;
+
+}
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        ". team ."
+        "supervisor team calculator"
+        "supervisor karma calculator"
+        ". karma .";
+    /* border: 1px solid; */
+
+    gap: 20px;
+
+}
+
+#team {
+
+    grid-area: team;
+    border-top-color: hsl(0, 78%, 62%);
+
+}
+
+#supervisor {
+
+    grid-area: supervisor;
+    border-top-color: hsl(180, 62%, 55%);
+
+}
+
+#karma {
+
+    grid-area: karma;
+    border-top-color: hsl(34, 97%, 64%);
+
+}
+
+#calculator {
+
+    grid-area: calculator;
+    border-top-color: hsl(212, 86%, 64%);
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .grid {
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "supervisor"
+            "team"
+            "karma"
+            "calculator";
+        gap: 30px;
+    }
+
+    body {
+
+        width: 100%;
+
+    }
+
+    .container {
+
+        width: 100%;
+        padding: 40px 20px;
+
+    }
+
+    .text {
+        
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .text h1 {
+
+        margin: 0;
+        width: 100%;
+        font-size: 24px;
+    
+    }
+
+    .text p {
+
+        font-size: 15px;
+
+    }
+
+
+
+}
