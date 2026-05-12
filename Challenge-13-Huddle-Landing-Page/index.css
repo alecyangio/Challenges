@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: white;
+}
+
+body {
+  background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+
+  background-color: hsl(257, 40%, 49%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+
+  font-family: "Open Sans";
+}
+
+img {
+  height: 100px;
+  background: transparent;
+}
+
+.huddle {
+  height: 50px;
+  margin-bottom: 100px;
+}
+
+.mockup {
+  height: 600px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.right {
+  padding: 60px;
+}
+
+.right h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 3.5rem;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.right p {
+  line-height: 1.5rem;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 30px;
+  width: 40%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+
+  /* align-items: center;
+    text-align: center;
+    justify-content: center; */
+
+  bottom: -30px;
+  right: 30px;
+}
+
+.icons i {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .mockup {
+    width: 100%;
+    height: auto;
+  }
+
+  .huddle {
+    margin-bottom: 30px;
+  }
+
+  .right {
+    text-align: center;
+    padding: 0;
+  }
+
+  .right h1 {
+    width: 100%;
+  }
+
+  .icons {
+    position: static;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  button {
+    padding: 10px;
+    width: 60%;
+  }
+}
