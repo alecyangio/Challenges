@@ -1,0 +1,263 @@
+:root {
+    --font-primary: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --green-text: #16A34A;
+    --dark-text: #0F172A;
+    --gray-text: #475569;
+    --bg-lightgray: #F1F5F9;
+    --bg-lightgreen: #F0FDF4;
+    --bg-green: #BBF7D0;
+    --bg-white: #FFFFFF;
+    --button-color: #16A34A;
+
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.button {
+    color: var(--bg-white);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+    z-index: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: var(--spacing-xl);
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--dark-text);
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    color: var(--green-text);
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--bg-lightgreen);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.hero-section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 80px;
+    margin: var(--spacing-md) 0;
+    max-width: 800px;
+    line-height: 80px;
+}
+
+.hero-section p {
+    max-width: 380px;
+}
+
+.primary-text {
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.hero-left .primary-text {
+    margin-bottom: var(--spacing-md);
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.button:nth-child(2) {
+    background-color: transparent;
+    color: var(--green-text);
+    border: 1px solid var(--green-text);
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+}
+
+.features .feature {
+    display: flex;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: var(--spacing-sm);
+    background-color: var(--bg-green);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.features .feature p {
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 80px;
+}
+
+.two-column {
+    display: flex;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-right {
+    width: 50%;
+}
+
+.hero-right .hero-img {
+    align-items: flex-end;
+    height: 600px;
+}
+
+.hero-right img {
+    width: 800px;
+    height: 800px;
+    transform: translate(-100px, -150px);
+
+
+}
+
+.subtitle2 {
+    color: var(--green-text);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.section-container {
+    background-color: var(--bg-lightgreen);
+    width: 100%;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+}
+
+.feature-section .icon {
+    border-radius: 50%;
+}
+
+.feature-section .icon-box {
+    margin-right: 10px;
+}
+
+.feature-section .subtitle2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-section h2 {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: var(--spacing-xl);
+}
+
+.cards {
+    display: flex;
+    gap: calc(var(--spacing-xl)*2);
+}
+
+.card {
+    display: flex;
+}
+
+.feature-section .primary-text {
+    max-width: 240px;
+}
+
+.productivity-section {
+    display: flex;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(1, 92, 1);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.productivity-section .left {
+    width: 50%;
+}
+
+.productivity-section .left h4 {
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+.productivity-section .left p {
+    font-size: 14px;
+}
+
+.productivity-section .right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productivity-section .right .button {
+    background-color: white;
+    color: var(--green-text);
+    font-weight: bold;
+}
+
